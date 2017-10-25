@@ -64,7 +64,7 @@ class Worker:
                 self.strategy.set_id(my_id)
                 while True:
                     get_map_and_play = self.hlt.get_string()
-                    if(get_map_and_play != 'Get map and play!'):
+                    if get_map_and_play != 'Get map and play!':
                         print(get_map_and_play)
                         break
                     game_map.get_frame(self.hlt.get_string())
